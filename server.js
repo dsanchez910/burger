@@ -5,7 +5,7 @@ const exphbs = require("express-handlebars");
 const methodOverride = require('method-override');
 const routes = require("./controllers/burgers_controller");
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3306;
 
 app.use(methodOverride('_method'));
 app.use(bodyParser.urlencoded({ extended: true }));
